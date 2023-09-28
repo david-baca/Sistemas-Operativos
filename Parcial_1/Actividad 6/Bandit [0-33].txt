@@ -1,0 +1,149 @@
+nivel 0
+
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+
+contrasena bandit0
+
+nivel 1
+
+cat ./-
+
+nivel 2
+
+"cat 'spaces in this filename'"
+
+nivel 3
+
+"cat inhere/.hidden"
+
+nivel 4 
+
+"file inhere/* | grep ASCII | cut -d: -f1 | xargs cat"
+
+nivel 5
+
+"find / -user bandit6 -group bandit6 -size 33c 2>/dev/null | xargs cat"
+
+nivel 6
+
+"find / -user bandit7 -group bandit6 -size 33c 2>/dev/null -exec cat {} + | grep ASCII"
+
+nivel 7 
+
+"grep -iw 'millionth' data.txt"
+
+
+nivel 8
+
+"sort data.txt | uniq -u"
+
+
+nivel 9
+
+"strings data.txt | grep -iw '== '"
+
+
+nivel 10
+
+"base64 -d data.txt"
+
+nivel 11
+
+"tr 'A-Za-z' 'N-ZA-Mn-za-m' < data.txt"
+
+nivel 12
+
+"cp data.txt /tmp/bandit12data; cd /tmp; mv bandit12data bandit12data.bz2; bzip2 -d bandit12data.bz2; mv bandit12data bandit12data.gz; gzip -d bandit12data.gz; mv bandit12data bandit12data.tar; tar -xvf bandit12data.tar; mv data5.bin bandit12data.bz2; bzip2 -d bandit12data.bz2; cat bandit12data"
+
+nivel 13
+
+"cp data.txt /tmp/bandit13data; cd /tmp; mv bandit13data bandit13data.bz2; bzip2 -d bandit13data.bz2; mv bandit13data bandit13data.gz; gzip -d bandit13data.gz; mv bandit13data bandit13data.tar; tar -xvf bandit13data.tar; mv data5.bin bandit13data.bz2; bzip2 -d bandit13data.bz2; cat bandit13data"
+
+nivel 14
+
+"cat /etc/bandit_pass/bandit14 | nc localhost 30000"
+
+nivel 15
+
+"openssl s_client -connect localhost:30001"
+
+nivel 16
+
+"nmap -p 31000-32000 localhost; echo 'JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv' | openssl s_client -connect localhost:31790 -quiet"
+
+nivel 17
+
+"diff passwords.new passwords.old | tail -n 1"
+
+nivel 18
+
+"ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme"
+
+nivel 19
+
+"./bandit20-do cat /etc/bandit_pass/bandit20"
+
+nivel 20
+
+"mkdir /tmp/bannn; cd /tmp/bannn; echo 'your-password' > sshkey.private; chmod 400 sshkey.private; ssh -i sshkey.private bandit17@bandit.labs.overthewire.org -p 2220"
+
+nivel 21
+
+"cat /etc/cron.d/cronjob_bandit22; cat /usr/bin/cronjob_bandit22.sh; cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv"
+
+nivel 22
+
+"cat /etc/cron.d/cronjob_bandit23; cat /usr/bin/cronjob_bandit23.sh; echo 'I am user bandit23' | md5sum | cut -d ' ' -f 1; cat /tmp/8ca319486bfbbc3663ea0fbe81326349"
+
+nivel 23
+
+"cat /etc/cron.d/cronjob_bandit24; cat /usr/bin/cronjob_bandit24.sh; echo 'I am user bandit23' | md5sum | cut -d ' ' -f 1; cat /tmp/yYyYea/pass"
+
+nivel 24
+
+"nano script.sh; chmod 777 script.sh; ./script.sh; cat pos.txt | nc localhost 30002 | grep -v 'Wrong'"
+
+nivel 25
+
+"cat /etc/passwd | grep bandit26; cat /usr/bin/showtext; ssh -i sshkey.private bandit26@bandit.labs.overthewire.org -p 2220"
+
+nivel 26
+
+"cd /var/spool/bandit26; echo 'cat /etc/bandit_pass/bandit26 > /tmp/bandit26pass' > /var/spool/bandit26/script; chmod +x /var/spool/bandit26/script; at now -f /var/spool/bandit26/script; cat /tmp/bandit26pass"
+
+nivel 27
+
+"mkdir /tmp/foo; cd /tmp/foo; git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo; cd repo; cat README"
+
+nivel 28
+
+"mktemp -d; cd /tmp/tmp.HAO1TDw8TO; git clone ssh://bandit28-git@localhost:2220/home/bandit28-git/repo; cd repo; git status; cat README.md; git log; git show 43032edb2fb868dea2ceda9cb3882b2c336c09ec"
+
+nivel 29
+
+"mktemp -d; cd /tmp/tmp.gLklDEvFBc; git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo; cd repo; git branch -a; git checkout dev; git log; git show 2b1395f00cfb986163082c50100be5be8f249f64"
+
+nivel 30
+
+"mktemp -d; cd /tmp/tmp.DywL2LwOM5; git clone ssh://bandit30-git@localhost:2220/home/bandit30-git/repo; cd repo; git tag; git show secret"
+
+nivel 31
+
+"mktemp -d; cd /tmp/tmp.3K2OxQOi3d; git clone ssh://bandit31-git@localhost:2220/home/bandit31-git/repo; cd repo; cat README.md; echo 'Your secret key' > key.txt; git add key.txt; git commit -m 'Added secret key'; git push origin master"
+
+nivel 32
+
+ssh bandit32@bandit.labs.overthewire.org -p 2220
+
+nivel 33
+
+ssh bandit33@bandit.labs.overthewire.org -p 2220
+
+
+
+
+
+
+
+
+
