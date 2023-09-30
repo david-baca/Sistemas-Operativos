@@ -133,11 +133,11 @@ nivel 31
 
 nivel 32
 
-ssh bandit32@bandit.labs.overthewire.org -p 2220
+
 
 nivel 33
 
-ssh bandit33@bandit.labs.overthewire.org -p 2220
+
 
 
 
