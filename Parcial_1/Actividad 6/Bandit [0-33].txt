@@ -133,9 +133,11 @@ nivel 31
 
 nivel 32
 
-
+cat /etc/bandit_pass/bandit33
 
 nivel 33
+
+cat README.txt
 
 
 
